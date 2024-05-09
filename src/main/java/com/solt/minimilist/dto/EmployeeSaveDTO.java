@@ -7,9 +7,9 @@ import lombok.*;
 @Data @Builder @ToString
 public class EmployeeSaveDTO {
 
-    private String employeename;
+    private String name;
 
-    private String employeeaddress;
+    private String email;
 
     private String phoneNumber;
 }

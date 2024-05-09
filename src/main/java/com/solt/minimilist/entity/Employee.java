@@ -11,22 +11,22 @@ import lombok.*;
 public class Employee {
 
     @Id
-    @Column(name = "employee_id", length = 50)
+    @Column(name = "id", length = 50)
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer employeeid;
+    private Integer id;
 
-    @Column(name = "employee_name", length = 50)
-    private String employeename;
+    @Column(name = "name", length = 50)
+    private String name;
 
-    @Column(name = "employee_address", length = 50)
-    private String employeeaddress;
+    @Column(name = "email", length = 50)
+    private String email;
 
-    @Column(name = "employee_phoneNumber", length = 50)
+    @Column(name = "phoneNumber", length = 50)
     private String phoneNumber;
 
-    public Employee(String employeename, String employeeaddress, String phoneNumber) {
-        this.employeename = employeename;
-        this.employeeaddress = employeeaddress;
+    public Employee(String name, String email, String phoneNumber) {
+        this.name = name;
+        this.email = email;
         this.phoneNumber = phoneNumber;
     }
 }

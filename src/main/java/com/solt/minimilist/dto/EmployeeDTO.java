@@ -7,11 +7,11 @@ import lombok.*;
 @Data @Builder @ToString
 public class EmployeeDTO {
 
-    private Integer employeeid;
+    private Integer id;
 
-    private String employeename;
+    private String name;
 
-    private String employeeaddress;
+    private String email;
 
     private String phoneNumber;
 }
